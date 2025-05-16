@@ -18,6 +18,8 @@ const Menu  = ({showPage}) => {
                 onClick = {() => showPage(page)}>{`${page}`}</button>
             )))}
         </div>
+
+        
     );
 }
 
