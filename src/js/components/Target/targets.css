@@ -1,0 +1,77 @@
+/* Стиль для видимости компонент систем */
+.hide {
+    display: none;
+}
+
+/* Стили для контейнера */
+.container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* Стили для заголовка */
+.mainText {
+    font-size: 2.5rem;
+    color: #444;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для текстового поля ввода */
+.target-input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Стили для отображения результата */
+.target-result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #28a745;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #e8f5e9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для изображения автомата */
+.shot-image {
+    width: 200px; /* Размер изображения */
+    height: auto; /* Сохраняем пропорции */
+    cursor: pointer; /* Изменяем курсор на "указатель" при наведении */
+    transition: transform 0.2s, filter 0.2s; /* Добавляем анимацию */
+    border: 2px solid transparent; /* Прозрачная граница для эффекта */
+    border-radius: 10px; /* Сlightly rounded corners */
+}
+
+/* Эффект при наведении */
+.shot-image:hover {
+    transform: scale(1.04); /* Увеличиваем размер */
+    filter: brightness(1.8); /* Сlightly dim the image */
+    border-color: #db3434; /* Добавляем цвет границы */
+}
+
+/* Эффект при клике */
+.shot-image:active {
+    transform: scale(0.9); /* Уменьшаем размер */
+}

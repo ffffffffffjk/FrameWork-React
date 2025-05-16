@@ -1,0 +1,78 @@
+.containerRpg {
+    transform: translateY(-15px); /* Сдвигаем весь контейнер на 50px вверх */
+}
+
+.rpg-title {
+    position: relative;
+    margin-left: 790px;
+    font-size: 30px;
+    font-weight: bold;
+    top: 100px;
+}
+
+.roomImage {
+    display: block;
+    margin: 20px auto 0 auto; /* Опускаем ниже */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.description, .foundsMoney {
+    text-align: center;
+    font-size: 26px;
+    margin-top: 7px; /* Опускаем вниз */
+}
+
+.exits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px; /* Опускаем кнопки ниже */
+}
+
+.exits button {
+    background-color: #3c34db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.exits button:hover {
+    background-color: #1d1f8b;
+}
+
+.exits button:active {
+    transform: scale(0.95);
+}
+
+.foundsMoney {
+    color: green;
+    font-weight: bold;
+}
+
+.hp, .money {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    margin-left: 400px;
+}
+
+.hp {
+    color: red;
+}
+
+.money {
+    color: green;
+}
+
+.hp .icon, .money .icon {
+    width: 30px; /* Размер иконки */
+    height: 30px;
+    margin-right: 8px; /* Отступ между иконкой и текстом */
+}
+

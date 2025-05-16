@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Стиль для видимости компонент систем */
+.hide {
+    display: none;
+}
+
+/* Общие стили для контейнера */
+.main-container {
+    overflow-x: hidden;
+    color: rgb(50, 50, 50);
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    border-radius: 15px;
+}
+
+/* Стили для заголовка с анимацией */
+.reveal-text {
+    font-family: "Dela Gothic One";
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для карточек */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.container .card {
+    position: relative;
+    width: 320px;
+    height: auto;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container .card:hover {
+    transform: scale(1.05);
+}
+
+.container .card .image {
+    width: 100%;
+    height: auto;
+}
+
+.container .card .image img {
+    width: 100%;
+    display: block;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Стили для контента */
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.content .left-image {
+    width: 45%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.content p {
+    font-family: "Noto Sans";
+    font-size: 1.4rem;
+    font-weight: 550;
+    color: rgb(32, 32, 32);
+    line-height: 1.8;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}

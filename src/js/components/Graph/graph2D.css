@@ -1,0 +1,32 @@
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background: #007BFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.func-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* отступ между функциями */
+}
+
+.func-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* отступы между input’ами и кнопкой */
+    align-items: center;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.hide {
+    display: none;
+}
